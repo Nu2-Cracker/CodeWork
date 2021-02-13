@@ -1,0 +1,11 @@
+version: "2"
+services:
+  workspaces:
+    image: work_images
+    container_name: work_container
+    build: .
+    ports:
+      - "4574:80"
+    volumes:
+      - ./workspace:/workspace
+    tty: true
